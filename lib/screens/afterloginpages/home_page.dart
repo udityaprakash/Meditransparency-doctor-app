@@ -17,6 +17,17 @@ class _home_pageState extends State<home_page> {
   final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar:AppBar(
+        leading: Builder(
+      builder: (BuildContext context) {
+        return IconButton(
+          icon: const Icon(Icons.widgets_outlined,size: 30,),
+          onPressed: () {
+            Scaffold.of(context).openDrawer();
+          },
+          tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+        );
+      },
+    ),
         backgroundColor: redclr,
         // centerTitle: true,
         title: Text(

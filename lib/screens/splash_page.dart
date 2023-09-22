@@ -31,7 +31,7 @@ class _SplashscreenState extends State<Splashscreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SvgPicture.asset('assets/svgs/iconnname.svg',width: MediaQuery.of(context).size.width)
+              SvgPicture.asset('assets/svgs/logoanname.svg',width: MediaQuery.of(context).size.width)
               // Image.asset('assets/images/meditransparencyicon.png')
             ],
           ),

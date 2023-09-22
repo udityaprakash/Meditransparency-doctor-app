@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:meditransparency_doctor/controls/constants/colors.dart';
 
 import 'controls/route.dart';
 
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: transparentclr,
+    ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: '/splashspage',
